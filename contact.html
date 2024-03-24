@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christopher nolan">
+    <meta name="description" content="About christopher nolan">
+    <title>contact form</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+    		form {
+			width: 300px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+		}
+		
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+		
+		input[type="text"], input[type="email"], textarea {
+			width: 100%;
+			padding: 10px;
+			margin-top: 5px;
+			border: 1px solid #b06969;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+		
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-top: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+		
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+</style>
+<body>
+	<header class="header-footer">
+		<h1> Christopher Nolan </h1> 
+	</header>
+    <nav class="listnav">
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="contact.html"> contact </a></li>
+            <li><a href="gallery.html"> gallery </a></li>
+            <li><a href="media.html"> media </a></li>
+
+        </ul>
+    </nav>
+	<main>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="useremail" required>
+            </div>
+            <br>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <br>
+            <div>
+                <label for="help">need any help?</label>
+                <select name="select" id="help">
+                    <option value="default">Select Option</option>
+                    <option value="Suggestion">Report a problem</option>
+                    <option value="Donate">Call customer service</option>
+                    <option value="Information">Get more Information</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comment" id="comments" cols="30" rows="4"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="human">I am a human</label>
+                <input type="checkbox" id="human" name="human" value="true">
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+<aside>
+
+	<h2>"Additional information"</h2>
+	<ul>
+	<li> <a href ="https://en.wikipedia.org/wiki/Christopher_Nolan_filmography" target="_blank" >wikipedia</a></li>
+	<li> <a href="https://www.britannica.com/biography/Christopher-Nolan-British-director" target="_blank">britannica</a></li>
+	<li> <a href="https://encyclopedia.thefreedictionary.com/Christopher+Nolan" target="_blank" >encyclopedia</a></li>
+	</ul>
+
+</aside>
+</body>
+<footer class="header-footer">
+    <p> &copy;gourisankar2024</p>
+</footer>
+</html>
