@@ -3,29 +3,40 @@ Name : Gourisankar Sivakumar
 Student number : 8987034
 */
 header{
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #121212, #624026);
     text-align: center;
     padding: 20px;
 }
 .listnav{
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #121212, #624026);
     margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+.listnav section{
+    width: 100%;
+    overflow: hidden;
 }
 .listnav ul{
     overflow: auto;
     height: 3rem;
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
 }
 .listnav li{
     float: left;
     list-style: none;
     width: 20%;
+    margin-right: 5rem;
 }
 .listnav a{
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
     font-weight: 900;
     text-decoration: none;
     text-align: center;
     display: block;
+    font-weight: 600;
+    font-size: 18px;
 }
 .listnav a:hover{
     color: antiquewhite;
@@ -43,16 +54,17 @@ ul li{
 }
 ul>li>a{
     text-decoration: none;
-    color:blue;
+    color:#babaca;
 }
   
 nav{
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    color:blue;
+    color:#babaca;
     padding: 10px;
 }
 body
 {
+    display: flex;
+    flex-direction: column;
     width: 80%;
     max-width: 90%;
     margin: auto;
@@ -63,20 +75,23 @@ body
 
 h1{
     font-variant: small-caps;
-    color:blue;
+    color:#a4a4c4;
 }
 h2{
     font-variant: small-caps;
-    color:blue;
+    color:#5b5bb0;
+    text-align: center;
 }
 aside{
-    float: right;
-    width: 30%;
     flex: 1;
-    background-image: url("../images/background\ image.jpg");
-    background-size: cover;
-    color: blue;
+    background-image: url("../images/imm.webp");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #b6c8bb;
     padding: 20px;
+    margin-left: 70px;
+    max-width: 20vw;
 }
 aside a:hover{
     color: cornsilk;
@@ -86,7 +101,6 @@ main{
     width: 55%;
     padding: 20px;
     clear: both;
-
 }
 q{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -96,10 +110,6 @@ q{
 
 img {
     border: 3px black solid;
-    grid-gap: 20px;
-    gap: 20px;
-    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
-
 }
 
 
@@ -111,25 +121,14 @@ img {
     clear: both;
 
 }
- .footer p{
-    color: blue;
+ footer p{
+    color: #b9b9d2;
     font-size: 16px;  
 }
 
 footer{
     text-align: center;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-}
-
-
-figcaption{
-    font-weight: bold;
-    font-variant: small-caps;
-}
-.container{
-    text-align: center;
-    padding-left: 5px;
-  
+    background: linear-gradient(to right, #121212, #624026);
 }
 .gallery {
     display: grid;
@@ -145,9 +144,144 @@ figcaption{
     overflow: hidden;
     width: 100%;
     height: auto;
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #151212;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b06969;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #311c1c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
 th,td{
-    border: solid 1px;
+    border: solid 2px;
+    border-collapse: collapse;
+    text-align: center;
+}
+.flurry{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.app{
+    display: grid;
+}
+.app .bannerWrapper{
+    display: flex; 
+    justify-content: space-between;
 }
 
+.bannerWrapper p{
+    padding-inline: 2rem;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+
+}
+tr:hover{
+    color: rgb(42, 165, 95);
+    font-size: 20px;
+    font-weight: 400px;
+}
+@media(max-width: 1200px)
+{
+    body{
+        font-size: 0.9rem;
+        padding: 1rem;
+        color: aqua;
+    }
+    .app{
+        flex-wrap: wrap;
+    }
+    html {
+        font-size: 16px;
+      }
+      h1{
+      font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    aside{
+        background-image: url("../images/Ch.jpg");
+        background-size: cover;
+        min-height: 500px;
+        border-bottom: 2rem solid black;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .header-footer{
+        font-size: 0.5rem;
+     }
+}
+@media (max-width: 600px){
+    body{
+        font-size: 0.9rem;
+        padding: 1rem;
+        color: gray;
+    }
+    .app{
+        flex-wrap: wrap;
+    }
+    html {
+        font-size: 16px;
+      }
+      h1{
+        font-size: 1rem;
+        }
+        p {
+            font-size: 1rem;
+          }
+          aside{
+            background-image: url("../images/dribble_4x.jpg");
+            background-size: cover;
+            border-bottom: 2rem solid black;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }  
+ .header-footer{
+    font-size: 0.5rem;
+ }
+}
